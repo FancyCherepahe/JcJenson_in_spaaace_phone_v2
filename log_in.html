@@ -1,0 +1,43 @@
+<!-- To use Node.js, you need to run a server-side script. This HTML file can communicate with a Node.js backend using HTTP requests (like fetch). 
+You should remove the fetch to 'users.json' and instead send a POST request to a Node.js server endpoint (e.g., '/login'). 
+Below is an example of how to modify the fetch call for Node.js backend: -->
+
+<!-- No Node.js code goes directly in the HTML file, but you can connect to a Node.js backend as shown below. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            try {
+                const response = await fetch('users.json');
+                const users = await response.json();
+                const user = users.find(u => u.username === username && u.password === password);
+                if (user) {
+                    alert('Login successful!');
+                } else {
+                    alert('Invalid username or password.');
+                }
+            } catch (error) {
+                alert('Error loading users.json');
+            }
+        });
+    </script>
+</body>
+</html>

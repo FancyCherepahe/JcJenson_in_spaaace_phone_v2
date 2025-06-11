@@ -1,0 +1,156 @@
+body{
+    background-color: black;
+}
+main{
+    color:white;
+}
+
+.header{
+    background-color:black;
+    color:white;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 75px;
+}
+.space_image{
+    opacity: 1;
+}
+.title{
+    font-family: "Sans-serif";
+    font-size: 80px;
+    position: relative;
+    bottom: 400px;
+    text-align: center;
+    color:aliceblue;
+}
+.mini_title{
+    color:white;
+    font-family: "Sans-serif";
+    font-size: 30px;
+    position: relative;
+
+    text-align: center;
+}
+.info{
+    color:white;
+    font-family: "Sans-serif";
+    font-size: 20px;
+    position: relative;
+    
+}
+.copper_9_image{
+    position: relative;
+    
+}
+#drone_title{
+    position: relative;
+    text-align: center;
+}
+.reverse_info{
+    color:white;
+    font-family: "Sans-serif";
+    font-size: 20px;
+    position: relative;
+    text-align: end;
+}
+
+
+.footer{
+    background-color:black;
+    color:white;
+    position: relative;
+    bottom: 0px;
+    display:flex;
+    justify-content: center;
+}
+.drone_div{
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex_direction_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center_margin_img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.justify_div{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+.choose_title{
+    color: white;
+    font-family: "Sans-serif";
+    font-size: 30px;
+    text-align: center;
+}
+.drone_choose_name{
+    font-family: "Sans-serif";
+    font-size: 20px;
+    text-align: center;
+}
+.drone_choose_buy{
+    background-color: white;
+    color: black;
+    font-family: "Sans-serif";
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.home{
+    color:white;
+    font-family: "Sans-serif";
+    font-size: 20px;
+    text-align: center;
+}
+#planet_feed{
+    color:white;
+    font-family: "Sans-serif";
+    font-size: 20px;
+    text-align: center;
+}
+.thad_info_img{
+    border: 2px solid whitesmoke;
+}
+.thad_info_div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.drone_description{
+    font-size: 20px;
+    color: white;
+    font-family: "Sans-serif";
+    text-align: center;
+}
+.easter_egg{
+    color:rgb(0, 0, 0);
+    text-align: end;
+}
+#button_beep{
+    color:red;
+    position: relative;
+    top: 170px;
+    left: 400px;
+    font-family: "Sans-serif";
+
+    
+}
+.freddy_div{
+    text-align: center;
+}
